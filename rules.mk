@@ -1,10 +1,17 @@
-# Disabling default build options from dz60/rules.mk that I don't need
+# Overwriting defaults from dz60/rules.mk
+
+# MCU = atmega32u4
+# BOOTLOADER = atmel-dfu
+
 BOOTMAGIC_ENABLE = no
 MOUSEKEY_ENABLE = no
-NKRO_ENABLE = no
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+SLEEP_LED_ENABLE = no
+BLUETOOTH_ENABLE = no
+AUDIO_ENABLE = no
 BACKLIGHT_ENABLE = no
 
-# Build options used i
-# They are enabled by default in dz60/rules.mk
-EXTRAKEY_ENABLE = yes
 RGBLIGHT_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+NKRO_ENABLE = yes
